@@ -5,32 +5,42 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Book from './components/Book/Book';
 import Services from './components/Services/Services';
+import Login from './components/Login/Login';
+import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+// import AuthProvider from './context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header></Header>
-        <Switch>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
 
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
 
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/service">
-            <Services></Services>
-          </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/service">
+              <Services></Services>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
 
-          <Route path="/booking/:serviceId">
-            <Book></Book>
-          </Route>
 
-        </Switch>
+            <PrivateRoute path="/booking/:serviceId">
+              <Book></Book>
+            </PrivateRoute>
 
-      </Router>
+          </Switch>
+
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

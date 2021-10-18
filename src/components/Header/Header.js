@@ -1,9 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../hooks/useAuth';
+import UseFirebase from '../hooks/UseFirebase';
 import './Header.css';
 import img from './image/icon.png'
 
 const Header = () => {
+	const { user, logOut } = useAuth();
 	return (
 		<div>
 			<nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,9 +31,16 @@ const Header = () => {
 						</ul>
 						<form className="d-flex justify-content-center">
 
-							<a className="nav-link" href="#">Sign-up</a>
+							{user?.email ?
+								// <Nav.Link as={Link} to="/login">Login</Nav.Link> :
 
-							<button className="btn btn-outline-success" type="submit">Login</button>
+								<p className="nav-link active fs-6 fw-bolder hover-link text-danger " onClick={logOut}>Logout</p> :
+
+								<NavLink className="nav-link active fs-6 fw-bolder hover-link" aria-current="page" to="/login">Login</NavLink>}
+
+							<p className="nav-link active fs-9 fw-bolder hover-link">
+								Signed in as: {user?.displayName}
+							</p>
 						</form>
 					</div>
 				</div>
