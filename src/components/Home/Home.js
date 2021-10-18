@@ -1,22 +1,10 @@
 import React from 'react';
+import Services from '../Services/Services';
 import './Home.css';
-import banner from '../../images/banner.jpg'
 
 const Home = () => {
 	return (
 		<div >
-			{/* <div className="banner-bg " >
-
-				<div className="row">
-					<div className="col-4 col-md-6 ">
-						<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum laudantium quas explicabo accusamus, nesciunt cum!</h4>
-						<button className="btn btn-primary">Register Now</button>
-					</div>
-
-
-				</div>
-
-			</div> */}
 
 			<div id="carouselExampleSlidesOnly " className="carousel slide" data-bs-ride="carousel">
 				<div className="carousel-inner">
@@ -35,6 +23,11 @@ const Home = () => {
 
 				</div>
 			</div>
+			{/* --------------------------------------------------
+			                         6 services
+			------------------------------------------------------*/}
+			<Services></Services>
+
 
 		</div>
 

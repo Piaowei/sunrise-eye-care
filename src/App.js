@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import Book from './components/Book/Book';
+import Services from './components/Services/Services';
 
 function App() {
   return (
@@ -12,15 +14,18 @@ function App() {
         <Switch>
 
           <Route exact path="/">
-            <Home>
-
-            </Home>
+            <Home></Home>
           </Route>
 
           <Route path="/home">
-            <Home>
+            <Home></Home>
+          </Route>
+          <Route path="/service">
+            <Services></Services>
+          </Route>
 
-            </Home>
+          <Route path="/booking/:serviceId">
+            <Book></Book>
           </Route>
 
         </Switch>
