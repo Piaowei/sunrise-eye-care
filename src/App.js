@@ -8,6 +8,8 @@ import Services from './components/Services/Services';
 import Login from './components/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Contacts from './components/Contacts/Contacts';
+import Doctors from './components/Doctors/Doctors';
 // import AuthProvider from './context/AuthProvider';
 
 function App() {
@@ -35,6 +37,13 @@ function App() {
 
             <PrivateRoute path="/booking/:serviceId">
               <Book></Book>
+            </PrivateRoute>
+
+            <PrivateRoute path="/contacts">
+              <Contacts></Contacts>
+            </PrivateRoute>
+            <PrivateRoute path="/doctors">
+              <Doctors></Doctors>
             </PrivateRoute>
 
           </Switch>

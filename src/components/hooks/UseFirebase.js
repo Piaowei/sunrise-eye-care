@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import { useEffect } from "react";
 import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, signOut, onAuthStateChanged } from "firebase/auth";
 import initializeAuthentication from "../Firebase/firebase.init";
@@ -88,22 +89,19 @@ const UseFirebase = () => {
 	}
 
 
-
 	const processLogin = (email, password) => {
 		const auth = getAuth();
 		signInWithEmailAndPassword(auth, email, password)
 			.then((result) => {
-				// Signed in 
 				const user = result.user;
-				console.log(user);
 				setError("")
-				// ...
 			})
 			.catch((error) => {
 				setError(error.message);
 			});
-	}
+		console.log("Ja hoise")
 
+	}
 
 	const registerNewUser = (email, password) => {
 		const auth = getAuth();

@@ -27,6 +27,12 @@ const Header = () => {
 							<li className="nav-item">
 								<NavLink className="nav-link active fs-6 fw-bolder hover-link" aria-current="page" to="/service">Service</NavLink>
 							</li>
+							<li className="nav-item">
+								<NavLink className="nav-link active fs-6 fw-bolder hover-link" aria-current="page" to="/doctors">Doctors</NavLink>
+							</li>
+							<li className="nav-item">
+								<NavLink className="nav-link active fs-6 fw-bolder hover-link" aria-current="page" to="/contacts">Contacts</NavLink>
+							</li>
 
 						</ul>
 						<form className="d-flex justify-content-center">

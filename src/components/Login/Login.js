@@ -16,9 +16,12 @@ const Login = () => {
 			})
 	}
 
-	const handleEmailLogIn = () => {
-
-	}
+	// const handleEmailLogIn = () => {
+	// 	processLogin()
+	// 		.then((result) => {
+	// 			history.push(redirect_uri);
+	// 		})
+	// }
 
 	return (
 		<div className="container mt-5">
@@ -59,7 +62,7 @@ const Login = () => {
 					</div>
 				</div>
 				<div className="text-danger mb-3">{error}</div>
-				<button type="submit" onClick={handleEmailLogIn} className="btn btn-primary">{isLogin ? "Login" : "Register"}</button>
+				<button type="submit" className="btn btn-primary">{isLogin ? "Login" : "Register"}</button>
 				<button type="button" onClick={handleResetPassword} className="btn btn-secondary btn-sm">Reset Password</button>
 			</form>
 
