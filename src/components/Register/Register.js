@@ -3,7 +3,7 @@ import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 import UseFirebase from '../hooks/UseFirebase';
 
-const Login = () => {
+const Register = () => {
 	const { handleRegistration, handleEmailChange, handlePasswordChange, toggleLogin, handleResetPassword, signInUsingGoogle, handleNameChange, isLogin, error, processLogin } = useAuth();
 	const location = useLocation();
 	const history = useHistory();
@@ -27,15 +27,15 @@ const Login = () => {
 		<div className="container mt-5">
 			<form onSubmit={handleRegistration}>
 				<h3 className="text-primary">Please {isLogin ? 'Login' : "Register"}</h3>
-				{/* 
-				{
-					!isLogin && <div className="row mb-3">
-						<label htmlFor="inputAddress" required className="col-sm-2 col-form-label">Name</label>
-						<div className="col-sm-10">
-							<input onBlur={handleNameChange} type="text" required className="form-control" id="inputAddress" placeholder="Your Name" />
-						</div>
+
+
+				<div className="row mb-3">
+					<label htmlFor="inputAddress" required className="col-sm-2 col-form-label">Name</label>
+					<div className="col-sm-10">
+						<input onBlur={handleNameChange} type="text" required className="form-control" id="inputAddress" placeholder="Your Name" />
 					</div>
-				} */}
+				</div>
+
 
 				<div className="row mb-3">
 					<label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
@@ -51,13 +51,12 @@ const Login = () => {
 					</div>
 				</div>
 
-				<div className="text-danger mb-3">{error}</div>
 
-				<button type="submit" className="btn btn-primary">{isLogin ? "Login" : "Register"}</button>
-				<button type="button" onClick={handleResetPassword} className="btn btn-secondary btn-sm">Reset Password</button>
+				<div className="text-danger mb-3">{error}</div>
+				<button type="submit" className="btn btn-primary"> Register</button>
+				<p>Already have an account <Link to="/login" >Login</Link> </p>
+				<div>-------or--------</div>
 			</form>
-			<p>New to ema-john website ?<Link to="/register" >Create account</Link></p>
-			<div>-------or--------</div>
 
 
 
@@ -75,4 +74,4 @@ const Login = () => {
 	);
 };
 
-export default Login;
+export default Register;

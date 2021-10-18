@@ -14,7 +14,7 @@ const UseFirebase = () => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState('');
-	const [isLogin, setIsLogin] = useState(false);
+	const [isLogin, setIsLogin] = useState(true);
 	const [isLoading, setIsLoading] = useState(true);
 	const auth = getAuth();
 
@@ -100,7 +100,7 @@ const UseFirebase = () => {
 				setError(error.message);
 			});
 		console.log("Ja hoise")
-
+		return signInWithEmailAndPassword(auth, email, password);
 	}
 
 	const registerNewUser = (email, password) => {
@@ -153,6 +153,7 @@ const UseFirebase = () => {
 		signInUsingGoogle,
 		logOut,
 		processLogin,
+		setError
 		isLogin
 
 	};
