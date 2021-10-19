@@ -13,7 +13,7 @@ const Header = () => {
 				<div className="container-fluid">
 					<a className="navbar-brand " href="#">
 						<img src={img} alt="" width="30" height="24" className="d-inline-block align-text-top" />
-						<span className="ps-3" >Sunrise Eye Care</span>
+						<span className="ps-3 fw-bold " >Sunrise Eye Care</span>
 					</a>
 					<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 						<span className="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@ const Header = () => {
 							{user?.email ?
 								// <Nav.Link as={Link} to="/login">Login</Nav.Link> :
 
-								<p className="nav-link active fs-6 fw-bolder hover-link text-danger " onClick={logOut}>Logout</p> :
+								<NavLink className="nav-link active fs-6 fw-bolder hover-link text-danger " onClick={logOut}>Logout</NavLink> :
 
 								<NavLink className="nav-link active fs-6 fw-bolder hover-link" aria-current="page" to="/login">Login</NavLink>}
 

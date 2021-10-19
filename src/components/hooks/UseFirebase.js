@@ -34,7 +34,7 @@ const UseFirebase = () => {
 	}
 
 	useEffect(() => {
-		// console.log("useEffect called");
+
 		const unsubscribed = onAuthStateChanged(auth, user => {
 			if (user) {
 				setUser(user)
@@ -60,6 +60,7 @@ const UseFirebase = () => {
 	}
 
 	const toggleLogin = e => {
+		setError('');
 		setIsLogin(e.target.checked)
 	}
 
@@ -90,16 +91,16 @@ const UseFirebase = () => {
 
 	const processLogin = (email, password) => {
 		const auth = getAuth();
-		signInWithEmailAndPassword(auth, email, password)
-			.then((result) => {
+		return signInWithEmailAndPassword(auth, email, password)
+			// .then((result) => {
 
-				// const user = result.user;
-				// console.log(user);
-				setError("")
-				// ...
-			})
+			// 	const user = result.user;
+			// 	console.log(user);
+			// 	setError("");
+
+			// })
 			.catch((error) => {
-				setError(error.message);
+				setError("User can't find");
 			});
 	}
 
@@ -128,6 +129,7 @@ const UseFirebase = () => {
 		sendEmailVerification(auth.currentUser)
 			.then(result => {
 				// window.location.reload();
+				// setError('')
 				console.log(result);
 			})
 			.catch(error => {
@@ -155,7 +157,7 @@ const UseFirebase = () => {
 		logOut,
 		processLogin,
 		setError,
-		isLogin
+		isLogin, email, password
 
 	};
 };

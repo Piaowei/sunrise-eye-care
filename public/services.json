@@ -1,44 +1,50 @@
 [
     {
         "id": 1,
-        "name": "ENGINE DIAGNOSTIC",
+        "name": "  Retina Repair  ",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+        "description": "One method of retinal detachment repair is pneumatic retinopexy. In this procedure, a gas bubble is injected into the eye. The bubble presses against the detached retina and pushes it back into place. A laser or cryotherapy is then used to reattach the retina firmly into place.",
+        "detail": "There are several types of surgery to repair a detached retina. A simple tear in the retina can be treated with freezing, called cryotherapy, or a laser procedure. Different types of retinal detachment require different kinds of surgery and different levels of anesthesia. The type of procedure your doctor preforms will depend on the severity of retinal detachment.One method of retinal detachment repair is pneumatic retinopexy. In this procedure, a gas bubble is injected into the eye. The bubble presses against the detached retina and pushes it back into place. A laser or cryotherapy is then used to reattach the retina firmly into place. The gas bubble will dissolve in a few days. A pneumatic retinopexy can be done in an ophthalmologist’s office.In more severe tears, a procedure called a scleral buckle may be performed. During a scleral buckle a doctor will place a flexible band around the eye to counteract the force that is pulling the retina out of place. The fluid behind the detached retina will be drained, and the retina should return to its normal place in the back of the eye. This procedure is done in a hospital, operating room, or surgery clinic. Local or general anesthesia will be used, and you may need to stay overnight in the hospital.A vitrectomy is a procedure done for serious retinal detachments. It may require partially removing the vitreous fluid inside the eye. Local anesthesia is used and the procedure is usually done in a surgical clinic ",
+        "img": "https://i.ibb.co/VwPnK63/service-1.jpg"
     },
     {
         "id": 2,
-        "name": "WHEEL ALIGNMENT",
+        "name": "Glucoma Transplant",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+        "description": "Treatments for post-PKP glaucoma include medications, laser, and surgery. The most frequent surgical glaucoma intervention is implantation of a glaucoma-drainage device. Recent advances in corneal transplantation surgery may help to decrease corneal failure and the risk of developing post-keratoplasty glaucoma.",
+        "detail": "Penetrating keratoplasty (PKP) is associated with an increased risk of secondary glaucoma. The development of glaucoma after PKP is an important risk factor for decreased corneal graft survival. The incidence of glaucoma after corneal transplant as well as the mechanism of developing increased intraocular pressure is reviewed in this paper. Treatments for post-PKP glaucoma include medications, laser, and surgery. The most frequent surgical glaucoma intervention is implantation of a glaucoma-drainage device. Recent advances in corneal transplantation surgery may help to decrease corneal failure and the risk of developing post-keratoplasty glaucoma.Advances in keratoplasty surgical techniques may help to decrease the incidence of secondary glaucoma after keratoplasty surgery. The development of glaucoma after penetrating keratoplasty (PKP) can lead to devastating long-term complications, which are often sight threatening and challenging to treat. Patients with glaucoma after corneal transplants often respond poorly to medications and laser treatment and require",
+        "img": "https://i.ibb.co/ky7r7bf/service-2.jpg"
     },
     {
         "id": 3,
-        "name": "OIL CHANGING",
+        "name": "Gry Eye Sergery",
         "price": "150",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+        "description": "While eye color change surgery does exist in the form of controversial laser and implant procedures, eye care experts say the safest way to change your eye color, at least temporarily, is with professionally fitted colored contact lenses.Citing the potential dangers of eye color change surgery, the American Academy",
+        "detail": "Your eye color fully matures in infancy. From this early age, you’ll have naturally brown, blue, hazel, green, or gray eyes for the rest of your life. Some people wear colored contacts to enhance the intensity or change the color of their eyes. Others go to more extreme measures.A new controversial surgical procedure that permanently changes eye color is gaining traction. The practice, popular among celebrities, uses an artificial iris to drastically alter your eye color in a matter of minutes. Many doctors warn that this technique can lead to severe eye damage.The easiest and most common way to change your eye color temporarily is to wear contact lenses. You can go from a deep brown to a light hazel eye in a matter of seconds (or minutes, depending how long it takes you to get the contacts in).",
+        "img": "https://i.ibb.co/GF6gvgN/service-3.jpg"
     },
     {
         "id": 4,
-        "name": "BRAKE REPARING",
+        "name": "Cornea Transplant",
         "price": "180",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+        "description": "A cornea transplant is an operation to remove all or part of a damaged cornea and replace it with healthy donor tissue. A cornea transplant is often referred to as keratoplasty or a corneal graft. It can be used to improve sight, relieve pain and treat severe infection or damage.",
+        "detail": "Your eye surgeon will first administer either local or general anesthesia, depending on your health, age, eye injury or disease, and whether or not you prefer to be asleep during the procedure.If local anesthesia is used, an injection is made into the skin around your eye to relax the muscles that control blinking and eye movements, and eye drops are used to numb your eye. You will be awake during the procedure and most people don't report any discomfort.After the anesthesia has taken effect, an instrument called a lid speculum is used to keep your eyelids open. Your surgeon then measures the affected corneal area to determine the size of the donor tissue neededTraditional corneal transplant surgery. During traditional corneal transplant surgery, or penetrating keratoplasty (PK), a circular button-shaped, full-thickness section of tissue is removed from the diseased or injured cornea using either a surgical cutting instrument called a trephine or a femtosecond laser. an instrument called a lid speculum is used to keep your eyelids open. Your surgeon then measures the affected corneal area to determine the size of the donor tissue neededTraditional corneal transplant surgery. During traditional corneal transplant surgery, or penetrating keratoplasty (PK), a circular button-shaped, full-thickness section of tissue is removed from the diseased or injured cornea using either a surgical cutting instrument called a trephine or a femtosecond laser. ",
+        "img": "https://i.ibb.co/HTBfCDQ/service-4.jpg"
     },
     {
         "id": 5,
-        "name": "WASH AND GLASSING",
+        "name": "Surgical Procedure",
         "price": "100",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
-        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+        "description": "The act of performing surgery may be called a surgical procedure, operation, or simplysurgery.In this context, the verb operate means to perform surgery. The adjective surgical means pertaining to surgery; e.g. surgical instruments or surgical nurse.",
+        "detail": "The act of performing surgery may be called a surgical procedure, operation, or simply surgery. In this context, the verb operate means to perform surgery. The adjective surgical means pertaining to surgery; e.g. surgical instruments or surgical nurse. The person or subject on which the surgery is performed can be a person or an animal. A surgeon is a person who practices surgery and a surgeon's assistant is a person who practices surgical assistance. A surgical team is made up of the surgeon, the surgeon's assistant, an anaesthetist, a circulating nurse and a surgical technologist. Surgery usually spans from minutes to hours, but it is typically not an ongoing or periodic type of treatment. The term surgery can also refer to the place where surgery is performed, or, in British English, simply the office of a physician,[1] dentist, or veterinarian.context, the verb operate means to perform surgery. The adjective surgical means pertaining to surgery; e.g. surgical instruments or surgical nurse. The person or subject on which the surgery is performed can be a person or an animal. A surgeon is a person who practices surgery and a surgeon's assistant is a person who practices surgical assistance.",
+        "img": "https://i.ibb.co/xFC9qb7/service-5.jpg"
     },
     {
         "id": 6,
-        "name": "COMPLETE ANALYSIS",
+        "name": "Laser Surgery",
         "price": "300",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
-        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+        "description": "Laser surgery is a type of surgery that uses special light beams instead of instruments for surgical procedures. LASER stands for Light Amplification by the Stimula Emission of Radiation. Lasers were first developed in 1960.",
+        "detail": "Various types of laser surgery are used to treat refractive error. LASIK, in which a knife is used to cut a flap in the cornea, and a laser is used to reshape the layers underneath, is used to treat refractive error. IntraLASIK is a variant in which the flap is also cut with a laser. In photorefractive keratectomy (PRK, LASEK), the cornea is reshaped without first cutting a flap. In laser thermal keratoplasty, a ring of concentric burns is made in the cornea, which causes its surface to steepen, allowing better near vision. ReLEx SMILE is the latest advancement in laser vision correction technology. In SMILE surgery, ZEISS VisuMax ® femtosecond laser is used to make a small incision and to create a pre-calculated mini lens tissue (or lenticule) inside the cornea.[13]Lasers are also used to treat non-refractive conditio phototherapeutic keratectomy (PTK) in which opacities and surface irregularities are removed from the cornea and  toplasty, a ring of concentric burns is made in the cornea, which causes its surface to steepen, allowing better near vision. ReLEx SMILE is the latest advancement in laser vision correction technology. In SMILE surgery, ZEISS VisuMax ® femtosecond laser is used to make a small incision and to create a pre-calculated mini lens tissue (or lenticule) inside the cornea.[13]Lasers are also used to treat non-refractive conditio phototherapeutic keratectomy (PTK) in which opacities and surface irregularities are removed from the cornea and l laser coagulation in which a laser is used to cauterize blood vessels in the evarious conditions. Lasers can be used to repair tears in the retina",
+        "img": "https://i.ibb.co/fdKFw5C/service-6.jpg"
     }
 ]

@@ -15,8 +15,7 @@ const Book = () => {
 
 	return (
 		<div>
-			<h1>Hello</h1>
-			<p>This is from service{serviceId}</p>
+
 			{
 				// array1.find(service => element > 10);
 				services.map(service => <ServiceDetail

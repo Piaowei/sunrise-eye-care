@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
 	// console.log(service);
-	const { name, img, id } = service;
+	const { name, img, id, description } = service;
 	return (
 
 
@@ -13,10 +13,10 @@ const Service = ({ service }) => {
 				<div className="card-body">
 					<h5 className="card-title">
 						{name}</h5>
-					<p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.This content is a little bit longer.</p>
+					<p className="card-text">{description}</p>
 				</div>
 				<div className="card-footer border-0  ">
-					<Link to={`/booking/${id}`}><button className="btn btn-warning" >Details</button></Link>
+					<Link to={`/booking/${id}`}><button className="btn btn-warning" > <span className="fw-bold">Details</span>  {name}</button></Link>
 				</div>
 			</div>
 		</div>

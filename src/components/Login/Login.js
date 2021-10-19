@@ -1,10 +1,13 @@
-import React from 'react';
+import { getAuth } from '@firebase/auth';
+import React, { useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 import UseFirebase from '../hooks/UseFirebase';
 
 const Login = () => {
-	const { handleRegistration, handleEmailChange, handlePasswordChange, toggleLogin, handleResetPassword, signInUsingGoogle, handleNameChange, error, processLogin, isLogin } = useAuth();
+	// const [error, setError] = useState('');
+	const { handleRegistration, handleEmailChange, handlePasswordChange, toggleLogin, handleResetPassword, signInUsingGoogle, handleNameChange, processLogin, isLogin, email, password, setError, error } = useAuth();
+	const auth = getAuth();
 	const location = useLocation();
 	const history = useHistory();
 
@@ -14,18 +17,27 @@ const Login = () => {
 			.then(result => {
 				history.push(redirect_uri);
 			})
+
 	}
 
-	// const handleEmailLogIn = () => {
-	// 	processLogin()
-	// 		.then((result) => {
-	// 			history.push(redirect_uri);
-	// 		})
-	// }
+
+
+
+	const handleEmailLogIn = () => {
+		processLogin(email, password)
+			.then((result) => {
+				history.push(redirect_uri);
+				// setError("");
+			})
+			.catch((error) => {
+				setError("Thgis is eroor king", error.message);
+
+			});
+	}
 
 	return (
 		<div className="container mt-5">
-			<form onSubmit={handleRegistration}>
+			<form onSubmit={handleRegistration}  >
 				<h3 className="text-primary">Please {isLogin ? 'Login' : "Register"}</h3>
 
 				{
@@ -63,7 +75,7 @@ const Login = () => {
 				</div>
 				<div className="text-danger mb-3">{error}</div>
 
-				<button type="submit" className="btn btn-primary me-3">{isLogin ? "Login" : "Register"}</button>
+				<button type="submit" onClick={handleEmailLogIn} className="btn btn-primary me-3">{isLogin ? "Login" : "Register"}</button>
 
 
 				{

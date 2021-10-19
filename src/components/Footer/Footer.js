@@ -55,6 +55,7 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
+				<p className="text-white " >Copyeight @ Sunrise Eye Care</p>
 			</div>
 		</div>
 
