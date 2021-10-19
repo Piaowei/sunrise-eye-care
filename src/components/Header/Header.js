@@ -4,13 +4,14 @@ import useAuth from '../hooks/useAuth';
 import UseFirebase from '../hooks/UseFirebase';
 import './Header.css';
 import img from './image/eye.png'
+import './Header.css';
 
 const Header = () => {
 	const { user, logOut } = useAuth();
 	return (
 		<div>
-			<nav className="navbar navbar-expand-lg navbar-light bg-light  ">
-				<div className="container-fluid">
+			<nav className="navbar navbar-expand-lg navbar-light bg-light nav-color ">
+				<div className="container-fluid nav-color">
 					<a className="navbar-brand " href="#">
 						<img src={img} alt="" width="30" height="24" className="d-inline-block align-text-top" />
 						<span className="ps-3 fw-bold " >Sunrise Eye Care</span>
@@ -40,7 +41,7 @@ const Header = () => {
 							{user?.email ?
 								// <Nav.Link as={Link} to="/login">Login</Nav.Link> :
 
-								<NavLink className="nav-link active fs-6 fw-bolder hover-link text-danger " onClick={logOut}>Logout</NavLink> :
+								<p className="nav-link active fs-6 fw-bolder hover-link text-danger " onClick={logOut}>Logout</p> :
 
 								<NavLink className="nav-link active fs-6 fw-bolder hover-link" aria-current="page" to="/login">Login</NavLink>}
 

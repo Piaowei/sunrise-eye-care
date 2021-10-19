@@ -52,6 +52,10 @@ function App() {
               <Doctors></Doctors>
             </PrivateRoute>
 
+            {/* <PrivateRoute exact path="/booking/">
+              <NotFound></NotFound>
+            </PrivateRoute> */}
+
             <Route path="*">
               <NotFound></NotFound>
             </Route>

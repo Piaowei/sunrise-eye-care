@@ -1,0 +1,12 @@
+.nav-color {
+	background-color: rgb(251, 255, 192);
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.hover-link:hover {
+	background-color: #fff788;
+	font-style: italic;
+	border-radius: 5px;
+}

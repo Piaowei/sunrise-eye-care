@@ -41,7 +41,7 @@ const Home = () => {
 
 			<h3 className="top-rated pt-2 ">Search your Best Eye Solution Here</h3>
 			<div className="container-fluid pb-3 w-75 ">
-				<div className="input-group mb-3">
+				<div className="input-group mb-3 carts-home ">
 					<input type="text" className="form-control" placeholder="Course Name" aria-label="Course Name" aria-describedby="button-addon2" />
 					<button className="btn btn-outline-primary" type="Button" id="button-addon2">Search</button>
 				</div>

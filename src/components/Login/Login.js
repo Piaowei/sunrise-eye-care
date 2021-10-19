@@ -68,7 +68,7 @@ const Login = () => {
 						<div className="form-check d-flex justify-content-start">
 							<input onChange={toggleLogin} className="form-check-input me-2" type="checkbox" id="gridCheck1" />
 							<label className="form-check-label" htmlFor="gridCheck1">
-								Already Registered ?
+								<span className="text-danger" > Already Registered ?</span>
 							</label>
 						</div>
 					</div>
@@ -83,20 +83,13 @@ const Login = () => {
 				}
 
 			</form>
-			{/* <p>New to ema-john website ?<Link to="/register" >Create account</Link></p>
-			<div>-------or--------</div> */}
 
 
 
 
 			<br />
-			<div>----------------------------------------------------------</div>
-
-
-
-			<br />
-			<h2>Please Login</h2>
-			<button onClick={handleGoogleSignIn} className="btn btn-warning">Google Sign in</button>
+			<h4>Please Login</h4>
+			<button onClick={handleGoogleSignIn} className="btn btn-warning rounded-circle ">Google Sign in</button>
 
 		</div>
 	);

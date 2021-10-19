@@ -1,17 +1,10 @@
-.home {
-	margin-right: 0px;
-	margin-left: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.carts-home {
+.carts2 {
 	box-shadow: 10px 10px 20px #b7b9ff;
 	border: none;
 	/* background-image: url(../Header/images/gra-2.jpg); */
 }
 
-.carts-home:hover {
+.carts2:hover {
 	box-shadow: 4px 4px 7px gray;
 	border-radius: 10px;
 	border: 1px solid #fbff04;
