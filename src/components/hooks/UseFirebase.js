@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { Link, useHistory, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import { useEffect } from "react";
-import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, signOut, onAuthStateChanged } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, sendPasswordResetEmail, updateProfile, signOut, onAuthStateChanged, } from "firebase/auth";
 import initializeAuthentication from "../Firebase/firebase.init";
 
 initializeAuthentication();
@@ -14,7 +13,7 @@ const UseFirebase = () => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState('');
-	const [isLogin, setIsLogin] = useState(true);
+	const [isLogin, setIsLogin] = useState(false);
 	const [isLoading, setIsLoading] = useState(true);
 	const auth = getAuth();
 
@@ -93,14 +92,15 @@ const UseFirebase = () => {
 		const auth = getAuth();
 		signInWithEmailAndPassword(auth, email, password)
 			.then((result) => {
-				const user = result.user;
+
+				// const user = result.user;
+				// console.log(user);
 				setError("")
+				// ...
 			})
 			.catch((error) => {
 				setError(error.message);
 			});
-		console.log("Ja hoise")
-		return signInWithEmailAndPassword(auth, email, password);
 	}
 
 	const registerNewUser = (email, password) => {
@@ -127,6 +127,7 @@ const UseFirebase = () => {
 	const verifyEmail = () => {
 		sendEmailVerification(auth.currentUser)
 			.then(result => {
+				// window.location.reload();
 				console.log(result);
 			})
 			.catch(error => {
@@ -153,7 +154,7 @@ const UseFirebase = () => {
 		signInUsingGoogle,
 		logOut,
 		processLogin,
-		setError
+		setError,
 		isLogin
 
 	};
